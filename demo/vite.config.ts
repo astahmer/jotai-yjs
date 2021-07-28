@@ -13,7 +13,7 @@ export default defineConfig({
     resolve: {
         alias: [
             { find: "@", replacement: "/src" },
-            { find: "jotai-yjs", replacement: path.join(process.cwd(), "../", "./src/index.ts") },
+            // { find: "jotai-yjs", replacement: path.join(process.cwd(), "../", "./src/index.ts") },
             // { find: "jotai-yjs", replacement: path.join(process.cwd(), "../", "./dist/jotai-yjs.es.js") },
         ],
     },
