@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "jotai-yjs": ["../../src"]
+    }
+  },
+  "include": ["./src"]
+}
