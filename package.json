@@ -10,6 +10,8 @@
         "src",
         "dist"
     ],
+    "source": "src/index.ts",
+    "typings": "src/index.ts",
     "main": "./dist/jotai-yjs.umd.js",
     "module": "./dist/jotai-yjs.es.js",
     "exports": {
@@ -21,6 +23,7 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
+        "watch": "vite build --watch",
         "serve": "vite preview"
     },
     "keywords": [
@@ -40,17 +43,20 @@
         "yjs": "^13.5.11"
     },
     "peerDependencies": {
-        "jotai": "^1.2.2",
-        "react": "^17.0.2",
-        "valtio": "^1.1.0",
-        "valtio-yjs": "^0.1.0",
-        "y-websocket": "^1.3.16",
-        "yjs": "^13.5.11"
+        "jotai": "*",
+        "react": ">=16.8",
+        "valtio": "*",
+        "valtio-yjs": "*",
+        "y-websocket": "*",
+        "yjs": "*"
     },
     "devDependencies": {
         "@types/react": "^17.0.15",
         "prettier": "^2.3.2",
         "typescript": "^4.3.2",
         "vite": "^2.4.3"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
