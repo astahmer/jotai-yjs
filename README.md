@@ -2,6 +2,11 @@
 
 jotai-yjs makes yjs state [even easier](https://github.com/dai-shi/valtio-yjs)
 
+
+https://user-images.githubusercontent.com/47224540/127463982-3332da94-4bf6-46c5-9a2e-f67d54ac7cb3.mp4
+
+
+
 ## What is this
 
 [valtio](https://github.com/pmndrs/valtio) is
