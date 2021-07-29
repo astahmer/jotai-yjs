@@ -1,6 +1,7 @@
 {
     "name": "jotai-yjs",
-    "version": "0.0.0",
+    "description": "jotai-yjs makes yjs state even easier",
+    "version": "0.0.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/astahmer/jotai-yjs.git"
