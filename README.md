@@ -78,7 +78,7 @@ export const useProviderInit = () => {
 # Presence
 
 Using hooks, you get access to what I call your `presence`, which is the current user local awareness state in YJS terms.
-It is as simple as :
+It is used like a `useState`, as simple as :
 
 ```ts
 const [presence, setPresence] = usePresence();
@@ -104,6 +104,16 @@ export const { useYAwarenessInit, useYAwareness, presenceProxy, usePresence, use
 ```
 
 Inspired by [`zustand`](https://github.com/pmndrs/zustand) hook store.
+
+Quite a lot coming from that `makePresence` return ! Let's see what comes from it:
+
+-   `useYAwarenessInit`: hook to init the provider, basically it syncs an atom with each updates from the [`awareness`](https://docs.yjs.dev/getting-started/adding-awareness) service
+-   `useYAwareness`: returns the resulting `awareness` state set by`useYAwarenessInit`
+-   `presenceProxy`: the actual proxy source created by `valtio`
+-   `usePresence`: we talked about that one already [here](#presence)
+-   `usePresenceSnap`: just a shortcut, it's basically `const usePresenceSnap = () => useSnapshot(presenceProxy);`
+
+And since all of these hooks were created by **YOU**, you don't need to pass any arguments ! You did that already when you used `makePresence` so everything will be deduced from here.
 
 ## Demos
 
