@@ -128,7 +128,7 @@ Using `usePresence` and
 `WebsocketProvider` in [y-websocket](https://github.com/yjs/y-websocket),
 we can create multi-client React apps pretty easily.
 
--   https://codesandbox.io/s/github/astahmer/jotai-yjs/tree/main/demo
+-   https://codesandbox.io/s/github/astahmer/jotai-yjs/tree/main/demo?file=/src/pages/Demo.tsx
 -   (...open a PR to add your demos)
 
 # Notes
