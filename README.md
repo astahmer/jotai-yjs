@@ -26,12 +26,14 @@ yarn add react jotai-yjs jotai valtio valtio-yjs yjs
 
 ```ts
 import * as Y from "yjs";
-import { useYArray } from "jotai-yjs";
+import { useYArray, useYMap } from "jotai-yjs";
 
 // create a new Y doc
 const ydoc = new Y.Doc();
 
 // useYArray & useYMap returns the proxy source so that you can mutate it directly thanks to valtio-yjs
+const settings = useYMap<Settings>(yDoc, "settings");
+
 // here we're creating a proxy array (thanks to valtio-yjs) available globally (thanks to jotai) through its name, "games", attached to the yDoc we created earlier
 const gamesSource = useYArray<Game>(yDoc, "games");
 
@@ -111,7 +113,7 @@ Using `usePresence` and
 `WebsocketProvider` in [y-websocket](https://github.com/yjs/y-websocket),
 we can create multi-client React apps pretty easily.
 
--   TODO add codesandbox
+-   https://codesandbox.io/s/github/astahmer/jotai-yjs/tree/main/demo
 -   (...open a PR to add your demos)
 
 # Notes
