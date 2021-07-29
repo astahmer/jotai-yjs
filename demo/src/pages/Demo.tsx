@@ -49,7 +49,7 @@ export const Demo = () => {
             <Center flexDir="column" m="8">
                 <Stack h="100%">
                     <Stack direction="row" alignItems="center">
-                        <chakra.span>Username: </chakra.span>
+                        <chakra.span>(Editable) Username: </chakra.span>
                         <EditableName defaultValue={presence.username} onSubmit={updateName} />
                     </Stack>
                     <input type="color" onChange={handleUpdateColor} />
